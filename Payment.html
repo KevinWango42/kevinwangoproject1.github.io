@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Payment</title>
+    <link rel="icon" type="image/png" href="Source Images/Wu-Tang Clan Logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Payment.css">
+    <link rel="stylesheet" type="text/css" href="Icons/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+
+    <section class="form-img">
+        <div class="content">
+            <header>
+                <div class="logo">
+                <a href="index.html"><img src="Source Images/Wu-Tang Clan Logo.png" alt="navlogo">
+                </div>
+        
+            <nav>
+            <ul class="nav-list">
+            <li><a href="About.html">About</a></li>
+            <li><a href="https://wutangclanshop.com/collections/shop-all" target="_blank">Merch</a></li>
+            <li><a href="Map.html">Map</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li class="button"><a href="Booking.html">Book Now</a></li>
+            </ul>
+            </nav>
+        </header>
+    
+<!-- Confirm Payment -->
+
+        <div class="pay">
+            <h1>Confirm Payment</h1>
+            <div class="first-row">
+                <div class="card-name">
+                    <h3>Name</h3>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="cvv">
+                    <h3>CVV</h3>
+                    <div class="input-field">
+                        <input type="password" placeholder="Enter CVV">
+                    </div>
+                </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter card number">
+                </div>
+            </div>
+        </div>  
+        <div class="third-row">
+            <h3>Expiry Date</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2022</option>
+                        <option value="2019">2023</option>
+                        <option value="2018">2024</option>
+                        <option value="2017">2025</option>
+                        <option value="2016">2026</option>
+                        <option value="2015">2027</option>
+                      </select>
+                </div>
+                <div class="pay-method">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+             </div>
+            </div> 
+            
+                <div class="final-button">
+                    <a href="Booking.html" class="Decline">Decline</a>
+                    <a href="Success.html" class="Confirm">Confirm</a>
+                </div> 
+        </div>
+        </div>
+    </section>
+
+</body>
+</html>

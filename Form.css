@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Shanghai';
+    src: url(font/shanghai.ttf) format ('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+/* Form page */
+
+/* Form background img */
+
+.form-img{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , 
+    url('Source Images/C.R.E.A.M.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative ;
+}
+
+/* Personal Details form */
+
+.chamber{
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.582);
+    padding: 25px 30px;
+    border-radius: 30px;
+    border: 2px solid #ffd100; 
+    margin-left: 300px;  
+}
+
+.chamber .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: none;
+}
+
+.chamber form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.chamber form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    color: #ffd100;
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    background: transparent;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #ffd100;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Custom Radio buttons */
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #ffd100;
+}
+
+form .gender-details .gender-title{
+    color: #ffd100;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category{
+    color: #ffd100;
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #ffd100;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category  label .one,
+#dot-2:checked ~ .category  label .two,
+#dot-3:checked ~ .category  label .three{
+    border-color: #ffd100;
+    background: black;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .butt{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .butt a{
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    border: 2px solid #ffd100;
+    padding: 9px 33px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:#ffd100;
+    font-weight: 800; 
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+form .butt a:hover{
+    background:#ffd100;
+    color:black;
+    border: 2px solid transparent;
+    transition: .5s; 
+}
+
+form .butt .Proceed{
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    border: 2px solid #ffd100;
+    padding: 9px 27px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:#ffd100;
+    font-weight: 800; 
+    margin-left: 50px;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+form .butt .Proceed:hover{
+    background:#ffd100;
+    color:black;
+    border: 2px solid transparent;
+    transition: .5s; 
+}

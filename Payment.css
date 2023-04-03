@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Shanghai';
+    src: url(font/shanghai.ttf) format ('truetype');
+}
+
+/* Home Page */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+/* Form page */
+
+/* Form background img */
+
+.form-img{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , 
+    url('Source Images/C.R.E.A.M.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative ;
+}
+
+/* Confirm Payment Details */
+
+.pay{
+    width: 750px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 300px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 2px solid #ffd100;
+    border-radius: 30px;
+}
+
+.pay h1{
+    color: #ffd100;
+    text-align: center;
+}
+
+.pay h3{
+    color: #ffd100;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.first-row{
+    display: flex;
+}
+
+.card-name{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field{
+    border: none;
+    border-radius: 30px;
+}
+
+.input-field input{
+    background: transparent;
+    width: 100%;
+    border: 2px solid #ffd100;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay-method i{
+    font-size: 40px;
+    color: #ffffff;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.pay .final-button .Decline{
+    height: 50%;
+    width: 18%;
+    display: inline-block;
+    background: rgb(153, 0, 0);
+    text-decoration: none;
+    border: 3px solid rgb(255, 0, 0);
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:rgb(255, 0, 0);
+    font-weight: 800; 
+    margin-left: 220px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.pay .final-button .Decline:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+    transform: translateY(-10px), translateX(-10px);
+}
+
+.pay .final-button .Confirm{
+    height: 50%;
+    width: 18%;
+    display: inline-block;
+    background: rgb(0, 116, 35);
+    text-decoration: none;
+    border: 3px solid lime;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:lime;
+    font-weight: 800; 
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.pay .final-button .Confirm:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+    transform: translateY(-10px), translateX(-10px);
+}

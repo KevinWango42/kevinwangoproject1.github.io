@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Shanghai';
+    src: url(font/shanghai.ttf) format ('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 100px;
+}
+@media (max-width: 1000px) {
+	section {
+		padding: 100px 50px;
+	}
+}
+@media (max-width: 600px) {
+	section {
+		padding: 125px 30px;
+	}
+}
+
+@media (max-width: 1000px) {
+	header {
+		padding: 20px 50px;
+	}
+}
+@media (max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+	header h2 {
+		margin-bottom: 15px;
+	}
+	header .nav li {
+		margin: 0 7px;
+	}
+}
+
+.box {
+	display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 150%;
+    background: rgba(0, 0, 0, 0.644);
+    padding: 25px 30px;
+    border-radius: 30px;
+    border: 3px solid #ffd100; 
+    margin-left: 330px;
+	margin-top: 110px;
+}
+.box video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+.box h1 {
+	margin-bottom: 15px;
+    color: #ffd100;
+	font-size: 65px;
+	font-family: 'Shanghai';
+	text-shadow: 0 0 6px #ffd100;
+}
+.box p {
+	margin: 0px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+span{
+	color: #ffd100;
+	font-family: 'Shanghai';
+	font-size: 30px;
+
+}
+
+.box a.boxBtn{
+    height: 10%;
+    width: 20%;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    border: 3px solid #ffd100 ;
+    padding: 7px 50px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:#ffd100;
+    font-weight: 800; 
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.box a.boxBtn:hover{
+    background:#ffd100;
+    color:black;
+    border: 2px solid transparent;
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    transform: translateY(-10px), translateX(-10px);
+}
+
+.box a.boxBtn-2{
+    height: 10%;
+    width: 20%;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    border: 3px solid #ffd100;
+    padding: 7px 50px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color: #ffd100;
+    font-weight: 800; 
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.box a.boxBtn-2:hover{
+    background:#ffd100;
+    color:black;
+    border: 2px solid transparent;
+	transform: scale(1.1);
+    transition: .5s ease-in-out;
+    transform: translateY(-10px), translateX(-10px);  
+}
